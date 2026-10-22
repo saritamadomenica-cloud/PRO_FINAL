@@ -1,0 +1,8 @@
+﻿,toneladas_generadas_kg,porcentaje_cumplimiento,denuncias_atendidas,buenas_resenas,toneladas_mensuales,denuncias_mensuales,nivel_cumplimiento_num
+toneladas_generadas_kg,1.0,-0.1594,0.9698,-0.4237,0.6915,0.7279,
+porcentaje_cumplimiento,-0.1594,1.0,-0.2833,0.8472,0.0956,-0.1262,
+denuncias_atendidas,0.9698,-0.2833,1.0,-0.5557,0.6325,0.7458,
+buenas_resenas,-0.4237,0.8472,-0.5557,1.0,-0.2731,-0.5161,
+toneladas_mensuales,0.6915,0.0956,0.6325,-0.2731,1.0,0.9357,
+denuncias_mensuales,0.7279,-0.1262,0.7458,-0.5161,0.9357,1.0,
+nivel_cumplimiento_num,,,,,,,

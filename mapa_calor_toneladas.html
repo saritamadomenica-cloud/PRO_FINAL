@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1047c6e0bf7cbb490ed6d64507be57f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1047c6e0bf7cbb490ed6d64507be57f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1047c6e0bf7cbb490ed6d64507be57f = L.map(
+                "map_e1047c6e0bf7cbb490ed6d64507be57f",
+                {
+                    center: [-0.195, -78.48],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7106e7a0b442ee9861e0c6a70cb7d8cf = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7106e7a0b442ee9861e0c6a70cb7d8cf.addTo(map_e1047c6e0bf7cbb490ed6d64507be57f);
+        
+    
+            var tile_layer_6b3a26041d65efe6645b868b492bf5b4 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_6dcc0da70afd6f048d4fd43742f004c2 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var layer_control_3497d3d3d4b6ae9a30a3c9922ead4755_layers = {
+                base_layers : {
+                    "Calles (Esri)" : tile_layer_7106e7a0b442ee9861e0c6a70cb7d8cf,
+                    "Sat\u00e9lite (Esri)" : tile_layer_6b3a26041d65efe6645b868b492bf5b4,
+                    "Gris claro (Esri)" : tile_layer_6dcc0da70afd6f048d4fd43742f004c2,
+                },
+                overlays :  {
+                    "macro_element_7849a5a7335bc2fa4aebea731cbbd2df" : heat_map_7849a5a7335bc2fa4aebea731cbbd2df,
+                },
+            };
+            let layer_control_3497d3d3d4b6ae9a30a3c9922ead4755 = L.control.layers(
+                layer_control_3497d3d3d4b6ae9a30a3c9922ead4755_layers.base_layers,
+                layer_control_3497d3d3d4b6ae9a30a3c9922ead4755_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e1047c6e0bf7cbb490ed6d64507be57f);
+
+        
+    
+            var heat_map_7849a5a7335bc2fa4aebea731cbbd2df = L.heatLayer(
+                [[-0.098, -78.415, 5.68], [-0.253, -78.528, 7.84], [-0.175, -78.485, 11.77], [-0.105, -78.493, 6.0], [-0.29, -78.478, 4.11], [-0.22, -78.512, 4.43], [-0.2985, -78.548, 7.62], [-0.212, -78.4, 3.05]],
+                {
+  "minOpacity": 0.4,
+  "maxZoom": 18,
+  "radius": 30,
+  "blur": 20,
+}
+            );
+        
+    
+            heat_map_7849a5a7335bc2fa4aebea731cbbd2df.addTo(map_e1047c6e0bf7cbb490ed6d64507be57f);
+        
+</script>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db636e6443ca7190618fb2f1808e977a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_db636e6443ca7190618fb2f1808e977a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_db636e6443ca7190618fb2f1808e977a = L.map(
+                "map_db636e6443ca7190618fb2f1808e977a",
+                {
+                    center: [-0.195, -78.48],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa230b54f37d96bb4849789b818dd308 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fa230b54f37d96bb4849789b818dd308.addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+            var tile_layer_6e5c9669d3189a3be41271f6a4f1dcd5 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_775d200b60119f4b6028908545e1a63b = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var layer_control_dc5178b49c5dde1c17c5bfbaac2966f1_layers = {
+                base_layers : {
+                    "Calles (Esri)" : tile_layer_fa230b54f37d96bb4849789b818dd308,
+                    "Sat\u00e9lite (Esri)" : tile_layer_6e5c9669d3189a3be41271f6a4f1dcd5,
+                    "Gris claro (Esri)" : tile_layer_775d200b60119f4b6028908545e1a63b,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_dc5178b49c5dde1c17c5bfbaac2966f1 = L.control.layers(
+                layer_control_dc5178b49c5dde1c17c5bfbaac2966f1_layers.base_layers,
+                layer_control_dc5178b49c5dde1c17c5bfbaac2966f1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+
+        
+    
+            var circle_marker_3dffaf5a63acf309d229be705d58fcdd = L.circleMarker(
+                [-0.098, -78.415],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.477485131690738, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_840ae02a497b5e82f1a76e46677c7751 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b201ca5f39455019ccb17cf964c34c86 = $(`<div id="html_b201ca5f39455019ccb17cf964c34c86" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Calderón<br>     <b>Parroquia:</b> Calderón (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 5.68<br>     <b>Denuncias mensuales (prom.):</b> 141.02<br>     <b>Cumplimiento (prom.):</b> 91.88%<br>     <b>Buenas reseñas (prom.):</b> 79.00%     </div>`)[0];
+                popup_840ae02a497b5e82f1a76e46677c7751.setContent(html_b201ca5f39455019ccb17cf964c34c86);
+            
+        
+
+        circle_marker_3dffaf5a63acf309d229be705d58fcdd.bindPopup(popup_840ae02a497b5e82f1a76e46677c7751)
+        ;
+
+        
+    
+    
+            circle_marker_3dffaf5a63acf309d229be705d58fcdd.bindTooltip(
+                `<div>
+                     Calderón
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b6df960a0f393e1ab85041fa6b7a605 = L.circleMarker(
+                [-0.253, -78.528],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.98300764655905, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_df90256ab0d3de4bed02947acfabe974 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6870aca2c917b05640ef07b982dbcff = $(`<div id="html_b6870aca2c917b05640ef07b982dbcff" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Eloy Alfaro<br>     <b>Parroquia:</b> Solanda (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 7.84<br>     <b>Denuncias mensuales (prom.):</b> 167.35<br>     <b>Cumplimiento (prom.):</b> 94.44%<br>     <b>Buenas reseñas (prom.):</b> 82.01%     </div>`)[0];
+                popup_df90256ab0d3de4bed02947acfabe974.setContent(html_b6870aca2c917b05640ef07b982dbcff);
+            
+        
+
+        circle_marker_1b6df960a0f393e1ab85041fa6b7a605.bindPopup(popup_df90256ab0d3de4bed02947acfabe974)
+        ;
+
+        
+    
+    
+            circle_marker_1b6df960a0f393e1ab85041fa6b7a605.bindTooltip(
+                `<div>
+                     Eloy Alfaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a236ae11aa84a3fac5969e70e697e33a = L.circleMarker(
+                [-0.175, -78.485],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_41931e86e6c96daf5c4ddf72609e888b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c6ff694a9b535d7ee279a9030205964 = $(`<div id="html_4c6ff694a9b535d7ee279a9030205964" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Eugenio Espejo<br>     <b>Parroquia:</b> Iñaquito (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 11.77<br>     <b>Denuncias mensuales (prom.):</b> 201.38<br>     <b>Cumplimiento (prom.):</b> 96.09%<br>     <b>Buenas reseñas (prom.):</b> 84.99%     </div>`)[0];
+                popup_41931e86e6c96daf5c4ddf72609e888b.setContent(html_4c6ff694a9b535d7ee279a9030205964);
+            
+        
+
+        circle_marker_a236ae11aa84a3fac5969e70e697e33a.bindPopup(popup_41931e86e6c96daf5c4ddf72609e888b)
+        ;
+
+        
+    
+    
+            circle_marker_a236ae11aa84a3fac5969e70e697e33a.bindTooltip(
+                `<div>
+                     Eugenio Espejo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8521be01af0f6cd451f6dbd0cd9fd5cd = L.circleMarker(
+                [-0.105, -78.493],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.293118096856414, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_993618ea004e5fe3a2dfda72333d8f8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90968da73278a69da8b4ebbc6ed46cc6 = $(`<div id="html_90968da73278a69da8b4ebbc6ed46cc6" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> La Delicia<br>     <b>Parroquia:</b> Cotocollao (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 6.00<br>     <b>Denuncias mensuales (prom.):</b> 124.54<br>     <b>Cumplimiento (prom.):</b> 94.86%<br>     <b>Buenas reseñas (prom.):</b> 84.02%     </div>`)[0];
+                popup_993618ea004e5fe3a2dfda72333d8f8d.setContent(html_90968da73278a69da8b4ebbc6ed46cc6);
+            
+        
+
+        circle_marker_8521be01af0f6cd451f6dbd0cd9fd5cd.bindPopup(popup_993618ea004e5fe3a2dfda72333d8f8d)
+        ;
+
+        
+    
+    
+            circle_marker_8521be01af0f6cd451f6dbd0cd9fd5cd.bindTooltip(
+                `<div>
+                     La Delicia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1f200c0ed89e586101a3fd618c9806a = L.circleMarker(
+                [-0.29, -78.478],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.475785896346645, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_1ea9d73ab1426e03744a16167b5f9667 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8dd0c6cfe1116e56509737df05c9112e = $(`<div id="html_8dd0c6cfe1116e56509737df05c9112e" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Los Chillos<br>     <b>Parroquia:</b> Conocoto (Rural)<br>     <b>Toneladas mensuales (prom.):</b> 4.11<br>     <b>Denuncias mensuales (prom.):</b> 80.83<br>     <b>Cumplimiento (prom.):</b> 92.60%<br>     <b>Buenas reseñas (prom.):</b> 82.70%     </div>`)[0];
+                popup_1ea9d73ab1426e03744a16167b5f9667.setContent(html_8dd0c6cfe1116e56509737df05c9112e);
+            
+        
+
+        circle_marker_f1f200c0ed89e586101a3fd618c9806a.bindPopup(popup_1ea9d73ab1426e03744a16167b5f9667)
+        ;
+
+        
+    
+    
+            circle_marker_f1f200c0ed89e586101a3fd618c9806a.bindTooltip(
+                `<div>
+                     Los Chillos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_639fe6edbdbf23c9ffe967bae03767a8 = L.circleMarker(
+                [-0.22, -78.512],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.291418861512318, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_130ddefa5cfd968bf11f791bbcf90fc5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f0e1adc2e7082129c883aa4bb14a70c = $(`<div id="html_9f0e1adc2e7082129c883aa4bb14a70c" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Manuela Sáenz<br>     <b>Parroquia:</b> Centro Histórico (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 4.43<br>     <b>Denuncias mensuales (prom.):</b> 101.25<br>     <b>Cumplimiento (prom.):</b> 96.52%<br>     <b>Buenas reseñas (prom.):</b> 86.76%     </div>`)[0];
+                popup_130ddefa5cfd968bf11f791bbcf90fc5.setContent(html_9f0e1adc2e7082129c883aa4bb14a70c);
+            
+        
+
+        circle_marker_639fe6edbdbf23c9ffe967bae03767a8.bindPopup(popup_130ddefa5cfd968bf11f791bbcf90fc5)
+        ;
+
+        
+    
+    
+            circle_marker_639fe6edbdbf23c9ffe967bae03767a8.bindTooltip(
+                `<div>
+                     Manuela Sáenz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d1fa6e6ca154b4270dc256f98addd77 = L.circleMarker(
+                [-0.2985, -78.548],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.42225998300765, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_991fc1beca6c0efbcc6dd01447486093 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0375215993208409d06775406f9dcf25 = $(`<div id="html_0375215993208409d06775406f9dcf25" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Quitumbe<br>     <b>Parroquia:</b> Quitumbe (Urbana)<br>     <b>Toneladas mensuales (prom.):</b> 7.62<br>     <b>Denuncias mensuales (prom.):</b> 185.15<br>     <b>Cumplimiento (prom.):</b> 93.31%<br>     <b>Buenas reseñas (prom.):</b> 80.68%     </div>`)[0];
+                popup_991fc1beca6c0efbcc6dd01447486093.setContent(html_0375215993208409d06775406f9dcf25);
+            
+        
+
+        circle_marker_2d1fa6e6ca154b4270dc256f98addd77.bindPopup(popup_991fc1beca6c0efbcc6dd01447486093)
+        ;
+
+        
+    
+    
+            circle_marker_2d1fa6e6ca154b4270dc256f98addd77.bindTooltip(
+                `<div>
+                     Quitumbe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7995ff7698cbf73c8d51c459f21e4967 = L.circleMarker(
+                [-0.212, -78.4],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.774001699235344, "stroke": true, "weight": 3}
+            ).addTo(map_db636e6443ca7190618fb2f1808e977a);
+        
+    
+        var popup_5841b8de9a3e86dd14a229c208d0dfd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e52986e6b34d55412772908d02abb29d = $(`<div id="html_e52986e6b34d55412772908d02abb29d" style="width: 100.0%; height: 100.0%;">     <b>Administración Zonal:</b> Tumbaco<br>     <b>Parroquia:</b> Tumbaco (Rural)<br>     <b>Toneladas mensuales (prom.):</b> 3.05<br>     <b>Denuncias mensuales (prom.):</b> 62.98<br>     <b>Cumplimiento (prom.):</b> 93.21%<br>     <b>Buenas reseñas (prom.):</b> 84.79%     </div>`)[0];
+                popup_5841b8de9a3e86dd14a229c208d0dfd0.setContent(html_e52986e6b34d55412772908d02abb29d);
+            
+        
+
+        circle_marker_7995ff7698cbf73c8d51c459f21e4967.bindPopup(popup_5841b8de9a3e86dd14a229c208d0dfd0)
+        ;
+
+        
+    
+    
+            circle_marker_7995ff7698cbf73c8d51c459f21e4967.bindTooltip(
+                `<div>
+                     Tumbaco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

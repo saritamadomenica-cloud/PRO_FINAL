@@ -1,0 +1,65 @@
+﻿ano,trimestre,mes,provincia,canton,administracion_zonal,parroquia,zona,toneladas_generadas_kg,tipo_recoleccion,frecuencia,porcentaje_cumplimiento,denuncias_atendidas,buenas_resenas,periodo_datos,fecha
+2021,ANUAL,N/D,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,168340.5,Carga Lateral y Pie de Vereda,Diurna y Nocturna,94.2,3420,81.5,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,112450.2,Pie de Vereda,Lunes a Sábado,92.8,2890,78.2,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,109800.8,Pie de Vereda y Carga Lateral,Diurna y Nocturna,91.5,3110,76.8,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,La Delicia,Cotocollao,Urbana,85600.4,Pie de Vereda,Interdiaria,93.1,2150,80.0,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Calderón,Calderón,Urbana,81200.0,Pie de Vereda,Interdiaria,89.4,2450,74.5,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,63100.3,Carga Lateral y Manual,Diurna y Nocturna,95.0,1820,83.1,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Los Chillos,Conocoto,Rural,58900.1,Pie de Vereda,Interdiaria,90.2,1430,79.0,Enero-Diciembre 2021,2021-01-01
+2021,ANUAL,N/D,Pichincha,Quito,Tumbaco,Tumbaco,Rural,43200.7,Pie de Vereda,Interdiaria,91.0,1120,81.2,Enero-Diciembre 2021,2021-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,171200.8,Carga Lateral y Pie de Vereda,Diurna y Nocturna,95.1,3150,83.0,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,114100.5,Pie de Vereda,Lunes a Sábado,93.5,2640,80.1,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,110900.3,Pie de Vereda y Carga Lateral,Diurna y Nocturna,92.3,2900,78.5,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,La Delicia,Cotocollao,Urbana,86900.0,Pie de Vereda,Interdiaria,94.0,1980,82.3,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Calderón,Calderón,Urbana,82500.6,Pie de Vereda,Interdiaria,90.8,2210,76.9,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,64000.1,Carga Lateral y Manual,Diurna y Nocturna,95.8,1650,85.0,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Los Chillos,Conocoto,Rural,59800.4,Pie de Vereda,Interdiaria,91.5,1300,80.5,Enero-Diciembre 2022,2022-01-01
+2022,ANUAL,N/D,Pichincha,Quito,Tumbaco,Tumbaco,Rural,44100.2,Pie de Vereda,Interdiaria,92.1,1010,82.8,Enero-Diciembre 2022,2022-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,174500.3,Carga Lateral y Pie de Vereda,Diurna y Nocturna,96.0,2980,84.5,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,116200.1,Pie de Vereda,Lunes a Sábado,94.2,2410,81.7,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,112800.9,Pie de Vereda y Carga Lateral,Diurna y Nocturna,93.1,2720,80.0,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,La Delicia,Cotocollao,Urbana,88400.7,Pie de Vereda,Interdiaria,94.8,1820,83.9,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Calderón,Calderón,Urbana,84100.2,Pie de Vereda,Interdiaria,91.7,2050,78.4,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,65200.0,Carga Lateral y Manual,Diurna y Nocturna,96.3,1510,86.2,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Los Chillos,Conocoto,Rural,61000.8,Pie de Vereda,Interdiaria,92.3,1190,82.1,Enero-Diciembre 2023,2023-01-01
+2023,ANUAL,N/D,Pichincha,Quito,Tumbaco,Tumbaco,Rural,45200.5,Pie de Vereda,Interdiaria,93.0,940,84.0,Enero-Diciembre 2023,2023-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,176800.1,Carga Lateral y Pie de Vereda,Diurna y Nocturna,96.5,2810,85.2,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,118000.4,Pie de Vereda,Lunes a Sábado,94.8,2290,82.5,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,114500.0,Pie de Vereda y Carga Lateral,Diurna y Nocturna,93.8,2580,81.1,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,La Delicia,Cotocollao,Urbana,89900.2,Pie de Vereda,Interdiaria,95.2,1710,84.6,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Calderón,Calderón,Urbana,85600.8,Pie de Vereda,Interdiaria,92.4,1920,79.8,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,66100.5,Carga Lateral y Manual,Diurna y Nocturna,96.8,1400,87.1,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Los Chillos,Conocoto,Rural,62100.3,Pie de Vereda,Interdiaria,93.0,1100,83.2,Enero-Diciembre 2024,2024-01-01
+2024,ANUAL,N/D,Pichincha,Quito,Tumbaco,Tumbaco,Rural,46000.0,Pie de Vereda,Interdiaria,93.6,880,85.0,Enero-Diciembre 2024,2024-01-01
+2025,I,Enero,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,14260.0,Carga Lateral y Pie de Vereda,Diurna y Nocturna,96.8,230,86.0,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,9531.0,Pie de Vereda,Lunes a Sábado,95.1,190,83.2,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,9245.0,Pie de Vereda y Carga Lateral,Diurna y Nocturna,94.0,210,82.0,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,La Delicia,Cotocollao,Urbana,7040.0,Pie de Vereda,Interdiaria,95.5,140,85.1,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Calderón,Calderón,Urbana,6851.0,Pie de Vereda,Interdiaria,92.8,160,80.5,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,5336.0,Carga Lateral y Manual,Diurna y Nocturna,97.1,110,88.0,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Los Chillos,Conocoto,Rural,4986.0,Pie de Vereda,Interdiaria,93.4,90,84.0,Enero 2025,2025-01-01
+2025,I,Enero,Pichincha,Quito,Tumbaco,Tumbaco,Rural,3669.0,Pie de Vereda,Interdiaria,94.0,70,86.1,Enero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,13059.0,Carga Lateral y Pie de Vereda,Diurna y Nocturna,96.4,215,85.8,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,8631.0,Pie de Vereda,Lunes a Sábado,94.7,182,82.9,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,8380.0,Pie de Vereda y Carga Lateral,Diurna y Nocturna,93.6,201,81.5,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,La Delicia,Cotocollao,Urbana,6947.0,Pie de Vereda,Interdiaria,95.1,135,84.8,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Calderón,Calderón,Urbana,6322.0,Pie de Vereda,Interdiaria,92.2,153,79.9,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,5046.0,Carga Lateral y Manual,Diurna y Nocturna,96.8,105,87.5,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Los Chillos,Conocoto,Rural,4525.0,Pie de Vereda,Interdiaria,93.1,85,83.6,Febrero 2025,2025-01-01
+2025,I,Febrero,Pichincha,Quito,Tumbaco,Tumbaco,Rural,3438.0,Pie de Vereda,Interdiaria,93.8,65,85.7,Febrero 2025,2025-01-01
+2026,I,Enero,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,14510.0,Carga Lateral y Pie de Vereda,Diurna y Nocturna,97.0,210,87.1,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,9680.0,Pie de Vereda,Lunes a Sábado,95.4,175,84.0,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,9390.0,Pie de Vereda y Carga Lateral,Diurna y Nocturna,94.3,195,83.1,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,La Delicia,Cotocollao,Urbana,7180.0,Pie de Vereda,Interdiaria,95.8,128,86.0,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Calderón,Calderón,Urbana,6990.0,Pie de Vereda,Interdiaria,93.1,148,81.2,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,5420.0,Carga Lateral y Manual,Diurna y Nocturna,97.4,98,89.0,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Los Chillos,Conocoto,Rural,5080.0,Pie de Vereda,Interdiaria,93.8,82,85.0,Enero-Marzo 2026,2026-01-01
+2026,I,Enero,Pichincha,Quito,Tumbaco,Tumbaco,Rural,3750.0,Pie de Vereda,Interdiaria,94.2,61,87.0,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Eugenio Espejo,Iñaquito,Urbana,13280.0,Carga Lateral y Pie de Vereda,Diurna y Nocturna,96.7,198,86.8,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Eloy Alfaro,Solanda,Urbana,8790.0,Pie de Vereda,Lunes a Sábado,95.0,168,83.5,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Quitumbe,Quitumbe,Urbana,8510.0,Pie de Vereda y Carga Lateral,Diurna y Nocturna,93.9,188,82.4,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,La Delicia,Cotocollao,Urbana,7080.0,Pie de Vereda,Interdiaria,95.4,121,85.5,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Calderón,Calderón,Urbana,6450.0,Pie de Vereda,Interdiaria,92.6,140,80.8,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Manuela Sáenz,Centro Histórico,Urbana,5120.0,Carga Lateral y Manual,Diurna y Nocturna,97.0,92,88.2,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Los Chillos,Conocoto,Rural,4610.0,Pie de Vereda,Interdiaria,93.5,78,84.2,Enero-Marzo 2026,2026-01-01
+2026,I,Febrero,Pichincha,Quito,Tumbaco,Tumbaco,Rural,3510.0,Pie de Vereda,Interdiaria,94.0,58,86.5,Enero-Marzo 2026,2026-01-01
